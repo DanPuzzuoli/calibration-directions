@@ -1,0 +1,38 @@
+##############
+# model params
+##############
+dim: 4 # dimension
+v: 4.7398 # freq
+anharm: -0.348 # anharm
+r: 0.085 # drive strength 0.5 * 0.138
+v_spec: 4.7988 # spectator freq
+
+#####################
+# Optimization config
+#####################
+num_params: 96  # number of parameters being optimized
+n_steps: 48 # number of time steps in pulse
+max_iter: 500 # max number of iterations in solver
+weights: [
+  30.00, # fidelity
+  1.00, # static Z
+  8.00, # amp robustness
+  8.00, # CR drive
+  8.00, # counter CR drive
+  20.00, # cross talk
+  0.10, # average leakage
+  1.00 # final leakage
+]
+
+############
+# job config
+############
+tol: 1e-14
+log_folder: "logs"
+initial_guesses_folder: "initial_guesses"
+result_folder: "results"
+conda_environment: "devEnv310"
+device_type: "cpu"
+num_guesses: 140
+description: "pi half optimization"
+objective_description: "fidelity, static Z, amp robustness, CR drive, counter CR drive, cross talk, average leakage, final leakage"

@@ -11,4 +11,4 @@ The code in this repository can be run with the following environment:
 - Python 3.11
 - Qiskit Dynamics 0.4.3
 - Qiskit 0.45.1
-- JAX and ``jaxlib`` 0.4.6
+- JAX 0.4.6

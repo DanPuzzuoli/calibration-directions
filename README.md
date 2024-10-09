@@ -1,4 +1,4 @@
-# Paper supplement: Simple calibration methods for numerically designed quantum gates
+# Paper supplement: Dimensionality reduction for closed-loop quantum gate calibration
 
 This repository is a code supplement to the paper Simple calibration methods for numerically
 designed quantum gates **\<add hyperlink once submitted\>**. The notebook used to optimize the pulse
